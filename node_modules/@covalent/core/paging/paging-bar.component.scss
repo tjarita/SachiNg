@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  .td-paging-bar {
+    height: 48px;
+    /deep/ > * {
+      margin: 0 10px;
+    }
+    [mat-icon-button] {
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+}
