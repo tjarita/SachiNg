@@ -1,29 +1,30 @@
+import { CovalentMarkdownModule } from '@covalent/markdown';
+import { CovalentHighlightModule } from '@covalent/highlight';
+import { CovalentHttpModule } from '@covalent/http';
+import { routedComponents, AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { CovalentLayoutModule, CovalentStepsModule } from '@covalent/core';
-// (optional) Additional Covalent Modules imports
-import { CovalentHttpModule } from '@covalent/http';
-import { CovalentHighlightModule } from '@covalent/highlight';
-import { CovalentMarkdownModule } from '@covalent/markdown';
-import { CovalentDynamicFormsModule } from '@covalent/dynamic-forms';
-
 import { AppComponent } from './app.component';
+import { MainComponent } from './main/main.component';
+import { SharedModule } from 'app/shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routedComponents
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    CovalentLayoutModule,
-    CovalentStepsModule,
-    // (optional) Additional Covalent Modules imports
+    BrowserAnimationsModule,
+    SharedModule,
     CovalentHttpModule.forRoot(),
     CovalentHighlightModule,
-    CovalentMarkdownModule,
-    CovalentDynamicFormsModule
+    CovalentMarkdownModule
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
