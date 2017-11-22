@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button td-menu-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>BarkBooking</span>
+  <span style="flex: 1 1 auto;"></span>
+  <span>Right side</span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened="true">
+    <mat-nav-list>
+      <mat-list-item>MenuItem1</mat-list-item>
+      <mat-list-item>MenuItem2</mat-list-item>
+      <mat-list-item>MenuItem3</mat-list-item>
+    </mat-nav-list>
+</mat-sidenav>
+<router-outlet></router-outlet>
+
+</mat-sidenav-container>
