@@ -2,13 +2,20 @@ import { CovalentLayoutModule, CovalentStepsModule } from '@covalent/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatTooltipModule, MatSlideToggleModule, MatInputModule, MatCheckboxModule, MatToolbarModule, MatSnackBarModule, MatSidenavModule, MatTabsModule, MatSelectModule, MatGridListModule } from '@angular/material';
 
 const ANGULAR_MODULES: any[] = [
   FormsModule,
   ReactiveFormsModule
 ];
 
-const MATERIAL_MODULES: any[] = [];
+const MATERIAL_MODULES: any[] = [
+  MatButtonModule, MatCardModule, MatIconModule,
+  MatListModule, MatMenuModule, MatTooltipModule,
+  MatSlideToggleModule, MatInputModule, MatCheckboxModule,
+  MatToolbarModule, MatSnackBarModule, MatSidenavModule,
+  MatTabsModule, MatSelectModule, MatGridListModule
+];
 
 const COVALENT_MODULES: any[] = [
   CovalentLayoutModule,
