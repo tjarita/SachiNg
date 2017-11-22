@@ -26,5 +26,6 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routedComponents: any[] = [
-  MainComponent, DashboardComponent
+  MainComponent,
+  DashboardComponent
 ]
