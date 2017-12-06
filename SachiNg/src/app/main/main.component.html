@@ -2,19 +2,23 @@
   <button mat-icon-button td-menu-button (click)="sidenav.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>BarkBooking</span>
-  <span style="flex: 1 1 auto;"></span>
+  <span>
+    <a routerLink="/" class='toolbar-text-logo'>BarkBooking</a>
+  </span>
+  <span class='toolbar-middle-space'></span>
   <span>Right side</span>
 </mat-toolbar>
 
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="side" opened="true">
     <mat-nav-list>
-      <mat-list-item>MenuItem1</mat-list-item>
-      <mat-list-item>MenuItem2</mat-list-item>
-      <mat-list-item>MenuItem3</mat-list-item>
+      <mat-list-item>
+        <a routerLink="/">Dashboard</a>
+      </mat-list-item>
+      <mat-list-item>Appointments</mat-list-item>
+      <mat-list-item>Customers</mat-list-item>
     </mat-nav-list>
-</mat-sidenav>
-<router-outlet></router-outlet>
+  </mat-sidenav>
+  <router-outlet></router-outlet>
 
 </mat-sidenav-container>
