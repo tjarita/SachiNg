@@ -1,4 +1,4 @@
-import { CovalentLayoutModule, CovalentStepsModule } from '@covalent/core';
+import { CovalentLayoutModule, CovalentStepsModule, CovalentExpansionPanelModule } from '@covalent/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -18,8 +18,7 @@ const MATERIAL_MODULES: any[] = [
 ];
 
 const COVALENT_MODULES: any[] = [
-  CovalentLayoutModule,
-  CovalentStepsModule
+  CovalentLayoutModule, CovalentStepsModule, CovalentExpansionPanelModule
 ];
 
 @NgModule({
