@@ -1,12 +1,18 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CovalentLayoutModule, CovalentStepsModule, CovalentExpansionPanelModule } from '@covalent/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatTooltipModule, MatSlideToggleModule, MatInputModule, MatCheckboxModule, MatToolbarModule, MatSnackBarModule, MatSidenavModule, MatTabsModule, MatSelectModule, MatGridListModule } from '@angular/material';
 
 const ANGULAR_MODULES: any[] = [
+  BrowserAnimationsModule,
+  BrowserModule,
   FormsModule,
-  ReactiveFormsModule
+  ReactiveFormsModule,
+  FlexLayoutModule
 ];
 
 const MATERIAL_MODULES: any[] = [
