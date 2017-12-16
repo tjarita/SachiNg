@@ -6,6 +6,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PageNotFoundComponentComponent } from 'app/page-not-found-component/page-not-found-component.component';
 import { DashboardCustomersComponent } from './dashboard-customers/dashboard-customers.component';
+import { AppointmentComponents } from 'app/appointments/appointment-components.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -50,5 +52,6 @@ export const routedComponents: any[] = [
   DashboardComponent,
   DashboardAppointmentsComponent,
   DashboardCustomersComponent,
+  AppointmentComponents,
   PageNotFoundComponentComponent
 ]

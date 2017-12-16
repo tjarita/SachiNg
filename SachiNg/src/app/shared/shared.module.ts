@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CovalentLayoutModule, CovalentStepsModule, CovalentExpansionPanelModule } from '@covalent/core';
+import { CovalentLayoutModule, CovalentStepsModule, CovalentExpansionPanelModule, CovalentDataTableModule } from '@covalent/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -24,7 +24,8 @@ const MATERIAL_MODULES: any[] = [
 ];
 
 const COVALENT_MODULES: any[] = [
-  CovalentLayoutModule, CovalentStepsModule, CovalentExpansionPanelModule
+  CovalentLayoutModule, CovalentStepsModule,
+  CovalentExpansionPanelModule, CovalentDataTableModule
 ];
 
 @NgModule({
