@@ -5,14 +5,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatIconModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatTooltipModule, MatSlideToggleModule, MatInputModule, MatCheckboxModule, MatToolbarModule, MatSnackBarModule, MatSidenavModule, MatTabsModule, MatSelectModule, MatGridListModule } from '@angular/material';
+import { MatIconModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatTooltipModule, MatSlideToggleModule, MatInputModule, MatCheckboxModule, MatToolbarModule, MatSnackBarModule, MatSidenavModule, MatTabsModule, MatSelectModule, MatGridListModule, MatDialogModule } from '@angular/material';
+
+const FLEX_LAYOUT_MODULES: any[] = [
+  FlexLayoutModule,
+];
 
 const ANGULAR_MODULES: any[] = [
-  BrowserAnimationsModule,
-  BrowserModule,
-  FormsModule,
-  ReactiveFormsModule,
-  FlexLayoutModule
+  BrowserAnimationsModule, BrowserModule,
+  FormsModule, ReactiveFormsModule,
+  MatDialogModule,
 ];
 
 const MATERIAL_MODULES: any[] = [
@@ -28,16 +30,20 @@ const COVALENT_MODULES: any[] = [
   CovalentExpansionPanelModule, CovalentDataTableModule
 ];
 
+
 @NgModule({
   imports: [
     CommonModule,
     ANGULAR_MODULES,
     COVALENT_MODULES,
-    MATERIAL_MODULES
+    MATERIAL_MODULES,
+    FLEX_LAYOUT_MODULES,
   ],
   exports: [
     ANGULAR_MODULES,
     COVALENT_MODULES,
-    MATERIAL_MODULES]
+    MATERIAL_MODULES,
+    FLEX_LAYOUT_MODULES,
+  ]
 })
 export class SharedModule { }
