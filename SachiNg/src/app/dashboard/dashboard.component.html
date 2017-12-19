@@ -1,13 +1,13 @@
 <div fxLayout="row">
   <mat-card fxFlex=50>
     <mat-card-title>Upcoming Appointments</mat-card-title>
-    <mat-card-content fxLayout="row" fxLayoutAlign="center center">
-        <app-appointment-table></app-appointment-table>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <app-appointment-table></app-appointment-table>
+      <button mat-raised-button (click)="openAppointmentForm()">Create new appointment</button>
     </mat-card-content>
   </mat-card>
   <mat-card fxFlex=50>Dashboard card</mat-card>
-  </div>
-  <div fxLayout="row">
-    <mat-card fxflex=50>Dashboard card</mat-card>
 </div>
-
+<div fxLayout="row">
+  <mat-card fxflex=50>Dashboard card</mat-card>
+</div>
