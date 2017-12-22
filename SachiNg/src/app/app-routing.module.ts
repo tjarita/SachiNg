@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { PageNotFoundComponentComponent } from 'app/page-not-found-component/page-not-found-component.component';
 import { DashboardCustomersComponent } from './dashboard-customers/dashboard-customers.component';
 import { AppointmentComponents } from 'app/appointments/appointment-components.component';
+import { PetProfileComponent } from 'app/pets/pet-profile/pet-profile.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
       {
         component: DashboardCustomersComponent,
         path:'customers'
+      },
+      {
+        component: PetProfileComponent,
+        path:'pet'
       }
 
     ]

@@ -1,13 +1,11 @@
-import { AppointmentFormComponent } from './appointments/appointment-form/appointment-form.component';
+import 'hammerjs';
 import { CovalentHttpModule } from '@covalent/http';
 import { routedComponents, AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { SharedModule } from 'app/shared/shared.module';
-
-import 'hammerjs';
 import { APPOINTMENT_DIALOGS, AppointmentsModule } from 'app/appointments/appointments.module';
+import { PetsModule } from 'app/pets/pets/pets.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +16,7 @@ import { APPOINTMENT_DIALOGS, AppointmentsModule } from 'app/appointments/appoin
     AppRoutingModule,
     SharedModule,
     CovalentHttpModule.forRoot(),
-    AppointmentsModule
+    AppointmentsModule, PetsModule
   ],
   bootstrap: [AppComponent],
   entryComponents: [
