@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AppointmentFormComponent } from 'app/appointments/appointment-form/appointment-form.component';
 import { MatDialog } from '@angular/material';
 import { AppointmentDetailDialogComponent } from 'app/appointments/appointment-detail-dialog/appointment-detail-dialog.component';
 
