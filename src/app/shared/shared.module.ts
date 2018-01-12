@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatTooltipModule, MatSlideToggleModule, MatInputModule, MatCheckboxModule, MatToolbarModule, MatSnackBarModule, MatSidenavModule, MatTabsModule, MatSelectModule, MatGridListModule, MatDialogModule, MatProgressBarModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http/src/module';
 
 const FLEX_LAYOUT_MODULES: any[] = [
   FlexLayoutModule,
@@ -14,7 +15,7 @@ const FLEX_LAYOUT_MODULES: any[] = [
 const ANGULAR_MODULES: any[] = [
   BrowserAnimationsModule, BrowserModule,
   FormsModule, ReactiveFormsModule,
-  MatDialogModule,
+  MatDialogModule, HttpClientModule
 ];
 
 const MATERIAL_MODULES: any[] = [
