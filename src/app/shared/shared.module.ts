@@ -5,15 +5,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatIconModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatTooltipModule, MatSlideToggleModule, MatInputModule, MatCheckboxModule, MatToolbarModule, MatSnackBarModule, MatSidenavModule, MatTabsModule, MatSelectModule, MatGridListModule, MatDialogModule, MatProgressBarModule } from '@angular/material';
-import { HttpClientModule } from '@angular/common/http/src/module';
+import { MatIconModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatTooltipModule, MatSlideToggleModule, MatInputModule, MatCheckboxModule, MatToolbarModule, MatSnackBarModule, MatSidenavModule, MatTabsModule, MatSelectModule, MatGridListModule, MatDialogModule, MatProgressBarModule, MatProgressSpinnerModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 
 const FLEX_LAYOUT_MODULES: any[] = [
   FlexLayoutModule,
 ];
 
 const ANGULAR_MODULES: any[] = [
-  BrowserAnimationsModule, BrowserModule,
+  BrowserModule, BrowserAnimationsModule,
   FormsModule, ReactiveFormsModule,
   MatDialogModule, HttpClientModule
 ];
@@ -24,7 +24,7 @@ const MATERIAL_MODULES: any[] = [
   MatSlideToggleModule, MatInputModule, MatCheckboxModule,
   MatToolbarModule, MatSnackBarModule, MatSidenavModule,
   MatTabsModule, MatSelectModule, MatGridListModule,
-  MatProgressBarModule
+  MatProgressBarModule, MatProgressSpinnerModule
 ];
 
 const COVALENT_MODULES: any[] = [
