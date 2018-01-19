@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import * as _moment from 'moment';
+import {default as _rollupMoment} from 'moment';
+import { FormControl } from '@angular/forms';
+const moment = _rollupMoment || _moment;
 
 @Component({
   selector: 'app-vaccination-manager',
@@ -11,5 +15,7 @@ export class VaccinationManagerComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  vaccinationDate =  new FormControl(moment([2017, 0, 1]));
 
 }
