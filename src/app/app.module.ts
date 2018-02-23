@@ -1,32 +1,34 @@
-import 'hammerjs';
-import { CovalentHttpModule } from '@covalent/http';
-import { routedComponents, AppRoutingModule } from './app-routing.module';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { SharedModule } from 'app/shared/shared.module';
-import { APPOINTMENT_DIALOGS, AppointmentsModule } from 'app/appointments/appointments.module';
-import { PetsModule } from 'app/pets/pets/pets.module';
-import { MAT_MOMENT_DATE_FORMATS, MomentDateAdapter } from '@angular/material-moment-adapter';
-import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+
+import { MyApp } from './app.component';
+import { HomePage } from '../pages/home/home';
+import { ListPage } from '../pages/list/list';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    routedComponents,
+    MyApp,
+    HomePage,
+    ListPage
   ],
   imports: [
-    AppRoutingModule,
-    SharedModule,
-    CovalentHttpModule.forRoot(),
-    AppointmentsModule, PetsModule
+    BrowserModule,
+    IonicModule.forRoot(MyApp),
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [IonicApp],
   entryComponents: [
-    APPOINTMENT_DIALOGS
+    MyApp,
+    HomePage,
+    ListPage
   ],
   providers: [
-    { provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE] },
-    { provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS },
-  ],
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
-export class AppModule { }
+export class AppModule {}
